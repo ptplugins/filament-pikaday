@@ -1,0 +1,45 @@
+{
+    "name": "ptplugins/filament-pikaday",
+    "description": "Pikaday date picker field for FilamentPHP — lightweight, dependency-light date input with min/max dates, year range, first-day-of-week, and full i18n.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "filament",
+        "filamentphp",
+        "laravel",
+        "datepicker",
+        "pikaday",
+        "form-field"
+    ],
+    "homepage": "https://ptplugins.com/filament-pikaday",
+    "support": {
+        "issues": "https://github.com/ptplugins/filament-pikaday/issues",
+        "source": "https://github.com/ptplugins/filament-pikaday"
+    },
+    "authors": [
+        {
+            "name": "Premtech Plugins",
+            "email": "mihailo@ptplugins.com",
+            "homepage": "https://ptplugins.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "PtPlugins\\FilamentPikaday\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PtPlugins\\FilamentPikaday\\FilamentPikadayServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

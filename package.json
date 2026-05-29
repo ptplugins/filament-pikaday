@@ -1,0 +1,14 @@
+{
+    "name": "filament-pikaday",
+    "private": true,
+    "scripts": {
+        "build:scripts": "node bin/build.js",
+        "build:styles": "cat node_modules/pikaday/css/pikaday.css resources/css/pikaday-overrides.css > dist/pikaday.css",
+        "build": "npm run build:scripts && npm run build:styles",
+        "dev": "node bin/build.js --dev && npm run build:styles"
+    },
+    "devDependencies": {
+        "esbuild": "^0.20.0",
+        "pikaday": "^1.8.2"
+    }
+}
