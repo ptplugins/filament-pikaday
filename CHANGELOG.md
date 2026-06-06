@@ -4,6 +4,11 @@ All notable changes to `ptplugins/filament-pikaday` are documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.1.2] - 2026-06-07
+
+### Added
+- README section documenting the ISO `Y-m-d` storage guarantee: the bound model value is always a locale-independent ISO date, while `displayFormat()` and the calendar i18n localize only what the user sees.
+
 ## [1.1.1] - 2026-06-07
 
 ### Added

@@ -41,6 +41,19 @@ PikadayDatePicker::make('published_at')
 
 The stored value is normalized to `Y-m-d`; the visible input follows `displayFormat()`.
 
+## ISO storage, localized display
+
+This is the key difference from most Filament date fields. **The value bound to your model is always an ISO `Y-m-d` string** (`2026-06-15`) — locale-independent, sortable, and safe to cast to `date` / compare in SQL. The *display* is localized purely on the front end via `displayFormat()` and the calendar i18n.
+
+```php
+PikadayDatePicker::make('published_at')
+    ->displayFormat('DD/MM/YYYY')   // user sees 15/06/2026
+    ->locale('hr');                 // calendar in Croatian
+// → model / database always stores "2026-06-15"
+```
+
+Why it matters: many date pickers persist whatever the *display* format is (`15/06/2026` vs `06/15/2026`), which then breaks parsing, sorting, and cross-locale data the moment two users have different formats. Here the storage format never changes — only what the user *sees* does. No ambiguity, no per-locale migration headaches, no `d/m` vs `m/d` bugs.
+
 ## Configuration API
 
 | Method | Description |
