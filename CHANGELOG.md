@@ -4,6 +4,11 @@ All notable changes to `ptplugins/filament-pikaday` are documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.1.0] - 2026-06-07
+
+### Changed
+- Widened the `filament/filament` constraint to `^3.0 || ^4.0 || ^5.0`. The single codebase now installs on Filament 3, 4, and 5. Verified against Filament v5.6.6 (`view:cache` compile + field runtime).
+
 ## [1.0.0] - 2026-05-29
 
 ### Added
