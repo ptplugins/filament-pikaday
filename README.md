@@ -8,6 +8,10 @@
 
 Single codebase across all three Filament major versions — same field, same API.
 
+<p align="center" class="filament-hidden">
+  <a href="https://ptplugins.com/buy-us-a-beer"><img src="https://img.shields.io/badge/%F0%9F%8D%BA-Buy%20us%20a%20beer-yellow" alt="Buy us a beer"></a>
+</p>
+
 **🎯 [Try it live · ptplugins.com/demo/pikaday](https://ptplugins.com/demo/pikaday)** — no signup, just open the calendar.
 
 ## Why
